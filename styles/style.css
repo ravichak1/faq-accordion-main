@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Figtree:ital,wght@0,300..900;1,300..900&family=Handlee&family=Inter:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sintony:wght@400;700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+:root{
+    /* ## Colors */
+
+    --white: hsl(0, 0%, 100%);
+    --lightPink: hsl(275, 100%, 97%);
+    --grayishPurple: hsl(292, 16%, 49%);
+    --darkPurple: hsl(292, 82%, 48%);
+
+    /* ## Typography
+
+    ### Body Copy */
+
+    --fontSizeParagraphs: 16px;
+    
+
+    --fontFamily : "Work Sans", sans-serif;
+    --fontWeight400 : 400;
+    --fontWeight600 : 600;
+    --fontWeight700 : 700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: var(--lightPink);
+    font-family: var(--fontFamily);
+    font-size: var(--fontSizeParagraphs);
+}
+
+.content{
+    display: none;
+    padding-top: 20px;
+    color: var(--grayishPurple);
+}
+
+.firstContent{
+    display: block;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 10% auto;
+    background-color: var(--white);
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.flexRow{
+    display: flex;
+    align-items: center;
+}
+
+.question{
+    justify-content: space-between;
+}
+
+.space{
+    padding: 30px;
+}
+
+.underline{
+    border-bottom: 1px solid rgb(247, 243, 243);
+}
+
+h1{
+    font-weight: var(--fontWeight700);
+    font-size: 3rem;
+}
+
+.flexGap{
+    gap: 20px;
+}
+
+h3:hover{
+    color: var(--darkPurple);
+}
+
+@media screen and (max-width: 375px){
+    .container{
+        width: 90%;
+    }
+}
